@@ -1,0 +1,19 @@
+11
+{template _son_1 att=att/}
+
+22
+{template _son_2 /}
+
+33
+{template _son_3 var=var}
+    template inner
+    {loop start=1}
+    _{$i}_
+    {/loop}
+
+    son inner
+    {template _son_inner /}
+
+{/template}
+
+end

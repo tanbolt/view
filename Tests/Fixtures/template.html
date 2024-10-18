@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="{$page.charset}">
+    <title>{$page.title}</title>
+</head>
+<body>
+<h1>{template head name="head" title=$page.title /}</h1>
+
+{$page.title}{$page[title]}
+{$page.name}{{$page.name}}
+
+{$person:name} - {$person->height}
+
+<br/>
+{add($person:height,10)}{sub(add($person->height,20),10)}
+
+<pre>
+    {if $person:height > 180 /* tall */}
+    tall
+    {elseif $person->height > 170}
+    normal
+    {else}
+    low
+    {/if}
+</pre>
+
+<pre>
+    {loop $page $k $v}
+    {$k} : {$v}
+    {/loop}
+</pre>
+
+<pre>
+    {loop end=10 key=j}
+    {$j}
+    {/loop}
+</pre>
+
+<pre>
+    {loop start=2 end=5}
+        {$i}
+        {loop start=2 end=5 step=2 key=j}
+            {$j}
+        {/loop}
+    {/loop}
+</pre>
+
+
+{php echo 'foo'; /}
+
+{$}
+
+{php}
+$foo = 'bar';
+echo $foo;
+{/php}
+
+{template block attr="att"/}
+
+
+{literal}
+<script type="text/JavaScript">
+    var js='{$js}';
+</script>
+{/literal}
+
+</body>
+</html>

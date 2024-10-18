@@ -1,0 +1,38 @@
+
+{$block.name} {$block[name]}
+
+{$block.arr.foo}
+-
+{$block[arr][bar]}
+
+<br/>
+
+{@foobar foo=foo1 attr=$parent.attr}
+{$key} : {$field}
+
+{/@foobar}
+
+<br/>
+
+{@foobar key=k field=f}
+{$k} : {$f}
+
+{/@foobar}
+
+<br/>
+
+
+{@foobar foo=foo1}
+    _ {$key}
+    {@foobar key=k field=f}
+    {$k} : {$f}
+
+    {/@foobar}
+    _ {$field}
+{/@foobar}
+
+<br/>
+{@foobar foo=foo1 bar=bar1 /}
+
+
+{@nothing foo=foo/}

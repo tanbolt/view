@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>chinese</title>
+</head>
+<body>
+<h1>headchinese-chinese</h1>
+
+chinesechinese汉字{$page.name}
+
+foo - 170
+<br/>
+180180
+<pre>
+        low
+    </pre>
+
+<pre>
+    title : chinesename : 汉字charset : utf-8</pre>
+
+<pre>
+    0123456789</pre>
+
+<pre>
+    224324424</pre>
+
+
+foo
+{$}
+
+barblockblockfoo-
+bar
+<br/>
+
+foo : foo1bar : barattr : att
+<br/>
+
+foo : foobar : barkey : kfield : f
+<br/>
+
+
+    _ foofoo : foobar : barkey : kfield : f    _ foo1    _ barfoo : foobar : barkey : kfield : f    _ bar
+<br/>
+__foobar__close__
+
+
+<script type="text/JavaScript">
+    var js='{$js}';
+</script>
+
+
+</body>
+</html>
